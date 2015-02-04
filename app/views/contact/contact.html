@@ -1,0 +1,54 @@
+<div class="container">
+
+	<header>
+		 <h2>{{ subject }}</h2>
+      	</header>
+
+	<p>Helloooooooooooooooooooooooooooooooooo</p>
+        <form method="post" action="#">
+		<div class="row">
+			<div class="4u">
+				<article class="item">
+					<div id="map" class="image fit" style="width:100%;height:100%;min-height:300px;min-width:100px;"></div>
+					<header>
+						<h3>Location is here</h3>
+					</header>
+				</acticle>
+			</div>
+		</div>
+        	<div class="row 50%">
+                	<div class="6u"><input type="text" name="name" placeholder="Name" /></div>
+                        <div class="6u"><input type="text" name="email" placeholder="Email" /></div>
+                </div>
+                <div class="row 50%">
+                        <div class="12u">
+	                        <textarea name="message" placeholder="Message"></textarea>
+                        </div>
+                </div>
+                <div class="row">
+        	        <div class="12u">
+                                <input type="submit" value="Send Message" />
+                        </div>
+                </div>
+         </form>
+</div>
+
+<script>
+	var container = document.getElementById('map');
+		var options = {
+			center: new daum.maps.LatLng(33.321442, 126.699725),
+			level: 5
+		};
+
+	var map 		= new daum.maps.Map(container, options);
+	var mapTypeControl 	= new daum.maps.MapTypeControl();
+	var zoomControl 	= new daum.maps.ZoomControl();
+	var markerPosition 	= new daum.maps.LatLng(33.321442, 126.699725);
+	var marker 		= new daum.maps.Marker({
+		position: markerPosition
+	});
+	
+	//map.addControl(mapTypeControl, daum.maps.ControlPosition.TOPRIGHT);
+	map.addControl(zoomControl, daum.maps.ControlPosition.RIGHT);
+	marker.setMap(map);
+</script>
