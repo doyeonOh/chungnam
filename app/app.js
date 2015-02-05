@@ -4,6 +4,7 @@
 var app = angular.module('chungnamApp', [
   'ngRoute',
 
+  'chungnamApp.banner',
   'chungnamApp.intro',
   'chungnamApp.greeting',
   'chungnamApp.contact',
@@ -13,7 +14,7 @@ var app = angular.module('chungnamApp', [
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.
-	when('/', {
+	when('/',{ 
 		templateUrl: 'index.html'
 	}).
 	when('/intro', {
