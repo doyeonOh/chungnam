@@ -9,6 +9,7 @@ var app = angular.module('chungnamApp', [
   'chungnamApp.greeting',
   'chungnamApp.contact',
   'chungnamApp.aboutus',
+  'chungnamApp.composite',
 
   'chungnamApp.version'
 ]).
