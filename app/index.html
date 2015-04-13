@@ -41,9 +41,12 @@
 						<li>
 							<a href="">Layouts</a>
 							<ul>
-								<!--<li><a href="left-sidebar.html">Left Sidebar</a></li>
-								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li> -->
+								<li><a href="#banner" class="scrolly">배너</a></li>
+								<li><a href="#intro" class="scrolly">인트로</a></li>
+								<li><a href="#greeting" class="scrolly">소개글</a></li>
+								<li><a href="#aboutus" class="scrolly">어바웃어스</a></li>
+								<li><a href="#composite" class="scrolly">컴포짓</a></li>
+								<li><a href="#contact" class="scrolly">연락하기</a></li>
 								<li>
 									<a href="">Submenu</a>
 									<ul>
@@ -70,78 +73,34 @@
 				        </header>
 				        <span class="image"><img src="resources/images/golf/20150413_73.jpg" alt="" /></span>
 				</div>
-				<a href="#one" class="goto-next scrolly">Next</a>
+				<a href="#intro" class="goto-next scrolly">Next</a>
 			</section>
 
-		<!-- One -->
-			<section id="one" class="spotlight style1 bottom" ng-controller="IntroCtrl" >
+		<!-- intro -->
+			<section id="intro" class="spotlight style1 bottom" ng-controller="IntroCtrl" >
 				<div ng-include="'views/intro/intro.html'"></div>
-				<a href="#two" class="goto-next scrolly">Next</a>
+				<a href="#greeting" class="goto-next scrolly">Next</a>
 			</section>
 
-		<!-- Two -->
-			<section id="two" class="spotlight style2 right" ng-controller="GreetingCtrl">
+		<!-- greeting -->
+			<section id="greeting" class="spotlight style2 right" ng-controller="GreetingCtrl">
 				<div ng-include="'views/greeting/greeting.html'"></div>
-				<a href="#three" class="goto-next scrolly">Next</a>
+				<a href="#aboutus" class="goto-next scrolly">Next</a>
 			</section>
 
-		<!-- Three -->
-			<section id="three" class="spotlight style3 left" ng-controller="AboutusCtrl">
+		<!-- aboutus -->
+			<section id="aboutus" class="spotlight style3 left" ng-controller="AboutusCtrl">
 				<div ng-include="'views/aboutus/aboutus.html'"></div>
-				<a href="#four" class="goto-next scrolly">Next</a>
+				<a href="#composite" class="goto-next scrolly">Next</a>
 			</section>
 
-		<!-- Four -->
-			<section id="four" class="wrapper style1 special fade-up" >
-				<div class="container">
-					<header class="major">
-						<h2>Accumsan sed tempus adipiscing blandit</h2>
-						<p>Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat</p>
-					</header>
-					<div class="box alt">
-						<div class="row uniform">
-							<section class="4u 6u(medium) 12u$(xsmall)">
-								<span class="icon alt major fa-area-chart"></span>
-								<h3>Ipsum sed commodo</h3>
-								<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-							</section>
-							<section class="4u 6u$(medium) 12u$(xsmall)">
-								<span class="icon alt major fa-comment"></span>
-								<h3>Eleifend lorem ornare</h3>
-								<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-							</section>
-							<section class="4u$ 6u(medium) 12u$(xsmall)">
-								<span class="icon alt major fa-flask"></span>
-								<h3>Cubilia cep lobortis</h3>
-								<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-							</section>
-							<section class="4u 6u$(medium) 12u$(xsmall)">
-								<span class="icon alt major fa-paper-plane"></span>
-								<h3>Non semper interdum</h3>
-								<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-							</section>
-							<section class="4u 6u(medium) 12u$(xsmall)">
-								<span class="icon alt major fa-file"></span>
-								<h3>Odio laoreet accumsan</h3>
-								<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-							</section>
-							<section class="4u$ 6u$(medium) 12u$(xsmall)">
-								<span class="icon alt major fa-lock"></span>
-								<h3>Massa arcu accumsan</h3>
-								<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-							</section>
-						</div>
-					</div>
-					<footer class="major">
-						<ul class="actions">
-							<li><a href="#" class="button">Magna sed feugiat</a></li>
-						</ul>
-					</footer>
-				</div>
+		<!-- composite -->
+			<section id="composite" class="wrapper style1 special fade-up" ng-controller="CompositeCtrl">
+				<div ng-include="'views/composite/composite.html'"></div>
 			</section>
 
-		<!-- Five -->
-			<section id="five" class="wrapper style2 special fade" ng-controller="ContactCtrl">
+		<!-- contact -->
+			<section id="contact" class="wrapper style2 special fade" ng-controller="ContactCtrl">
 				<div ng-include="'views/contact/contact.html'"> </div>
 			</section>
 
@@ -167,6 +126,7 @@
 	  <script src="views/aboutus/aboutus.js"></script>
 	  <script src="views/contact/contact.js"></script>
 	  <script src="views/banner/banner.js"></script>
+	  <script src="views/composite/composite.js"></script>
 	  <script src="components/version/version.js"></script>
 	  <script src="components/version/version-directive.js"></script>
 	  <script src="components/version/interpolate-filter.js"></script>

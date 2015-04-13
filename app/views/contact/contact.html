@@ -3,6 +3,11 @@
                 <h2>찾아가기</h2>
                 <p>Ante metus praesent faucibus ante integer id accumsan eleifend</p>
         </header>
+	<div class="row uniform">
+		<div class="major" style="margin:auto;width:50%;height:200px;">
+			<span class="image fit" id="map" style="width:100%;height:100%;;position:relative;overflow:hidden;"></span>
+		</div>
+	</div>
         <form method="post" action="#" class="container 50%">
                 <div class="row uniform 50%">
                         <div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
@@ -11,7 +16,6 @@
         </form>
 </div>
 <script>
-	/*
 	var container = document.getElementById('map');
 		var options = {
 			center: new daum.maps.LatLng(33.321442, 126.699725),
@@ -29,5 +33,4 @@
 	//map.addControl(mapTypeControl, daum.maps.ControlPosition.TOPRIGHT);
 	map.addControl(zoomControl, daum.maps.ControlPosition.RIGHT);
 	marker.setMap(map);
-	*/
 </script>
