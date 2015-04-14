@@ -34,32 +34,21 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1 id="logo"><a href="index.html">Landed</a></h1>
+				<h1 id="logo"><a href="index.html">청남</a></h1>
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li>
-							<a href="">Layouts</a>
+							<a href="">Menu</a>
 							<ul>
-								<li><a href="#banner" class="scrolly">배너</a></li>
-								<li><a href="#intro" class="scrolly">인트로</a></li>
-								<li><a href="#greeting" class="scrolly">소개글</a></li>
-								<li><a href="#aboutus" class="scrolly">어바웃어스</a></li>
-								<li><a href="#composite" class="scrolly">컴포짓</a></li>
-								<li><a href="#contact" class="scrolly">연락하기</a></li>
-								<li>
-									<a href="">Submenu</a>
-									<ul>
-										<li><a href="#">Option 1</a></li>
-										<li><a href="#">Option 2</a></li>
-										<li><a href="#">Option 3</a></li>
-										<li><a href="#">Option 4</a></li>
-									</ul>
-								</li>
+								<li><a href="#banner" class="scrolly">환영합니다</a></li>
+								<li><a href="#intro" class="scrolly">소개합니다</a></li>
+								<li><a href="#greeting" class="scrolly">대표 인사말</a></li>
+								<li><a href="#aboutus" class="scrolly">이곳에 대하여</a></li>
+								<li><a href="#composite" class="scrolly">이렇게 운영됩니다</a></li>
+								<li><a href="#contact" class="scrolly">찾아가기</a></li>
 							</ul>
 						</li>
-						<li><a href="elements.html">Elements</a></li>
-						<li><a href="#" class="button special">Sign Up</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -71,25 +60,28 @@
 			        	        <h2>{{ subject }}</h2>
 			        	        <p>{{ content }}</p>
 				        </header>
-				        <span class="image"><img src="resources/images/golf/20150413_73.jpg" alt="" /></span>
+				        <span class="image"><img src="resources/images/pic01.jpg" alt="" /></span>
 				</div>
 				<a href="#intro" class="goto-next scrolly">Next</a>
 			</section>
 
 		<!-- intro -->
 			<section id="intro" class="spotlight style1 bottom" ng-controller="IntroCtrl" >
+				<span class="image fit main"><img src="resources/images/golf/20150413_001.png" alt="" /></span>
 				<div ng-include="'views/intro/intro.html'"></div>
 				<a href="#greeting" class="goto-next scrolly">Next</a>
 			</section>
 
 		<!-- greeting -->
 			<section id="greeting" class="spotlight style2 right" ng-controller="GreetingCtrl">
+				<span class="image fit main"><img src="resources/images/golf/20150413_004.png" alt="" /></span>
 				<div ng-include="'views/greeting/greeting.html'"></div>
 				<a href="#aboutus" class="goto-next scrolly">Next</a>
 			</section>
 
 		<!-- aboutus -->
 			<section id="aboutus" class="spotlight style3 left" ng-controller="AboutusCtrl">
+ 				<span class="image fit main bottom"><img src="resources/images/golf/20150413_003.png" alt="" /></span>
 				<div ng-include="'views/aboutus/aboutus.html'"></div>
 				<a href="#composite" class="goto-next scrolly">Next</a>
 			</section>
