@@ -8,3 +8,5 @@ angularJs 는 다음 gitHun seed 에서 받아 사용하였습니다.
 
   https://github.com/angular/angular-seed
 
+SamplePage는 다음과 같습니다
+http://doyeonoh.github.io/chungnam/
